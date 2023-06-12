@@ -1,0 +1,33 @@
+//正常
+QPushButton{
+        font: 10pt "微软雅黑";
+    color: #2f3640;
+    background-color: #f5f6fa;
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+//停留
+QPushButton::hover{
+    color: #FFFFFF;
+    background-color: #718093;
+    border-color: #2f3640;
+}
+
+//点击
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);
+}
+
+//点击over
+QPushButton::disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+
+
